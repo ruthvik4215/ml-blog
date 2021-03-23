@@ -144,6 +144,7 @@ button {
 
     .welcome-section {
         width: 100%;
+        background-image: none;
         height: 90%;
     }
 
