@@ -1,6 +1,6 @@
 * {
-    margin: 0;
-    box-sizing: border-box;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -10,6 +10,7 @@ body {
 a {
     outline: none;
     -webkit-tap-highlight-color: transparent;
+    text-decoration: none;
 }
 
 .topnav {
@@ -21,7 +22,7 @@ a {
 .topnav a {
   float: left;
   display: block;
-  color: #425066;
+  color: #113d5e;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -29,8 +30,8 @@ a {
 }
 
 .topnav a:hover {
-    border-bottom: 3px solid #1da1f2;
-    color: #1da1f2;
+    border-bottom: 3px solid #ec5d5e;
+    color: #ec5d5e;
 }
 
 .sidenav {
@@ -90,9 +91,6 @@ a {
 
 .welcome-section {
     padding-top: 10px;
-    background-image: url("https://velocityglobal-wpengine.netdna-ssl.com/wp-content/uploads/2019/02/Blog-Images-Forget-Machine-Learning-Humans-Still-Have-a-Lot-to-Learn-Part-II.jpg");
-    width: 100%;
-    height: 1300px;
 }
 
 .landing-container {
@@ -104,9 +102,11 @@ a {
     border-radius: 20px;
 }
 
+
 button {
     outline: none;
     -webkit-tap-highlight-color: transparent;
+    border:none;
 }
 
 .start-learning-button {
@@ -117,8 +117,63 @@ button {
     border: none;
     color: white;
     font-size: 17px;
+    cursor: pointer;
+    transition-duration: 0.4s;
 }
 
+.start-learning-button:hover, .start-learning-button::after {
+  color: #ec5d5e;
+  padding: 7px;
+  border: 3.5px solid #ec5d5e;
+  background-color: white;
+}
+
+.why-use-this-site {
+  text-align: center;
+  font-family: Roboto, sans-serif;
+  margin-top: 20px;
+  padding: 40px;
+  height: 250px;
+}
+
+.why-tryn {
+  margin: 12px;
+  font-size: 30px;
+}
+
+.why-try-reason {
+  font-size: 18px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.about-redirect-btn {
+  margin: 30px;
+  background-color: white;
+  font-size: 17px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.about-redirect-btn:hover, .about-redirect-btn::after {
+  color: #f3bd54;
+}
+
+.stay-connected {
+  padding: 20px;
+  color: #113d5e;
+}
+
+.sm {
+  color: #113d5e;
+  margin-top: 15px;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+
+.sm:hover, .sm::after {
+  color: white;
+}
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
@@ -145,13 +200,72 @@ button {
         width: 100%;
         background-image: none;
         height: 90%;
+        display: block;
     }
 
     .landing-container {
-        font-size: 15px;
-        margin: 10px;
+        font-size: 12px;
+        margin: 20px;
         width: 90%;
         padding: 20px;
-        margin-top: 20px
     }
+
+    .why-use-this-site {
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.19), 0 0px 60px 0 rgba(0, 0, 0, 0.14);
+      margin: 10px;
+      height: 100%;
+    }
+
+    .why-tryn {
+      font-size: 31px;
+    }
+
+    .why-try-reason {
+      font-size: 16px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+
+    .about-redirect-btn {
+      margin-top: 25px;
+      cursor: pointer;
+    }
+
+    .stay-connected {
+      width: 90%;
+    }
+}
+
+footer {
+  background-color: #bfd3e1;
+  margin-top: 20px;
+  height: 100%;
+  padding: 30px;
+}
+
+@media screen and (min-width: 601px) {
+  .landing-container {
+    padding: 30px;
+    margin: 50px;
+    font-size: 15px;
+    width: 60%;
+  }
+
+  .welcome-section {
+    background-size: 150% 150%;
+  }
+
+  .why-use-this-site {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .landing-container {
+    width: 40%;
+  }
 }
