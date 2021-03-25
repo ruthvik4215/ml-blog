@@ -1,6 +1,99 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
   font-family: 'Ubuntu', sans-serif;
-  padding: 10px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.main-container {
+    padding: 10px;
+    margin: 7px;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.19), 0 0px 10px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #113d5e;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.topnav a:hover {
+    border-bottom: 3px solid #ec5d5e;
+    color: #ec5d5e;
+    cursor: pointer;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #000220;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 18px 8px 8px 32px;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    font-size: 20px;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.hidenav {
+    display: none;
+}
+
+.navContainer {
+    display: flex;
+    padding: 5px;
+
+}
+
+.nav {
+    display: none;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    display: inline-block;
 }
 
 h2 {
@@ -41,6 +134,10 @@ img {
     text-align: center;
 }
 
+em {
+    opacity: 0.6;
+}
+
 .continue-btn {
     background-color: #ec5d5e;
     color: white;
@@ -56,4 +153,79 @@ img {
 .continue-btn:hover, .continue-btn::after {
     background-color: white;
     color: #ec5d5e;
+}
+
+.img-cont {
+    display: flex;
+}
+
+.case {
+    display: none;
+}
+
+footer {
+    background-color: #bfd3e1;
+    margin-top: 20px;
+    height: 100%;
+    padding: 30px;
+}
+
+.stay-connected {
+    padding: 20px;
+    color: #113d5e;
+}
+
+.sm {
+    color: #113d5e;
+    margin-top: 15px;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+.sm:hover,
+.sm::after {
+    color: white;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nav {
+        display: block;
+        outline: none;
+        -webkit-tap-highlight-color: transparent;
+
+    }
+
+    .topnav {
+        display: none;
+    }
+
+    .hidenav {
+        display: block;
+    }
+
+    .img-cont {
+        display: block;
+    }
+
+    .case {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .ga-wits {
+        width: 50%;
+        margin: 5px;
+        height: 500px;
+    }
 }
