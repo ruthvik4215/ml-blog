@@ -259,27 +259,53 @@ img {
  }
 
  footer {
-     background-color: #bfd3e1;
+     background-color: #f1f1f1;
      margin-top: 20px;
      height: 100%;
      padding: 30px;
  }
 
- .stay-connected {
-     padding: 20px;
-     color: #113d5e;
+ .footer {
+     text-align: center;
+     display: flex;
+     margin: 5px;
+     background-color: #f1f1f1;
  }
 
- .sm {
-     color: #113d5e;
-     margin-top: 15px;
-     cursor: pointer;
-     transition-duration: 0.2s;
+ .footer-text-link-contact {
+     opacity: 0.8;
+     color: #292929;
+     transition-duration: 0.4s;
  }
 
- .sm:hover,
- .sm::after {
-     color: white;
+ .footer-text-link-contact:hover,
+ .footer-text-link-contact::after {
+     color: black;
+     font-weight: bold;
+ }
+
+ .footer-text-link-github {
+     opacity: 0.8;
+     color: #292929;
+     transition-duration: 0.4s;
+ }
+
+ .footer-text-link-github:hover,
+ .footer-text-link-github::after {
+     color: black;
+     font-weight: bold;
+ }
+
+ .footer-text-link-instagram {
+     opacity: 0.8;
+     color: #292929;
+     transition-duration: 0.4s;
+ }
+
+ .footer-text-link-instagram:hover,
+ .footer-text-link-instagram::after {
+     color: black;
+     font-weight: bold;
  }
 
 @media screen and (max-height: 450px) {
