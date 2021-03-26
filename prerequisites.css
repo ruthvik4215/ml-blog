@@ -18,9 +18,9 @@ button {
     border: none;
     -webkit-tap-highlight-color: transparent;
     outline: none;
-    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.19), 0 0px 40px 0 rgba(0, 0, 0, 0.15);
     font-weight: bold;
     border-radius: 100px;
+    transition-duration: 0.4s;
 }
 
 .topnav {
