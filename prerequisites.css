@@ -115,8 +115,11 @@ button {
     display: flex;
     width: 100%;
     padding: 10px;
+    background-color: #f1f1f1;
     border-left: 4px solid #00b852;
-    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.19), 0 0px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.19),
+    0 0px 10px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
 }
 
 img {
@@ -232,12 +235,27 @@ img {
 .math {
     background-color: #f4f4f4;
     color: black;
+    border-radius: 7px;
     padding: 15px;
-    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.19), 0 0px 30px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.19), 0 0px 10px 0 rgba(0, 0, 0, 0.19);
     border-left: 4px solid black;
 }
  p.math {
      opacity: 0.7;
+ }
+
+ .continue-btn {
+     text-align: center;
+     padding: 15px 60px 15px 60px;
+     background-color: black;
+     color: white;
+     font-weight: bold;
+ }
+
+ .continue-btn:hover, .continue-btn::after {
+     border: 2px solid black;
+     color: black;
+     background-color: #f1f1f1;
  }
 
  footer {
