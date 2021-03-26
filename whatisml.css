@@ -9,6 +9,8 @@ body {
 
 p {
     font-size: 20px;
+    font-family: 'DM Sans',
+    sans-serif;
 }
 
 .main-container {
@@ -219,6 +221,13 @@ footer {
 
     .case {
         display: block;
+    }
+
+    .continue-btn {
+        width: 90%;
+        padding: 15px;
+        border-radius: 100px;
+        font-size: 17px;
     }
 }
 

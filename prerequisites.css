@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p {
+    font-family: 'DM Sans',
+    sans-serif;
+}
+
+a {
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+}
+
+button {
+    border: none;
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.19), 0 0px 40px 0 rgba(0, 0, 0, 0.15);
+    font-weight: bold;
+    border-radius: 100px;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.19), 0 0px 10px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #113d5e;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.topnav a:hover {
+    border-bottom: 3px solid #ec5d5e;
+    color: #ec5d5e;
+    cursor: pointer;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #000220;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 18px 8px 8px 32px;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    font-size: 20px;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.hidenav {
+    display: none;
+}
+
+.navContainer {
+    display: flex;
+    padding: 5px;
+
+}
+
+.nav {
+    display: none;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    display: inline-block;
+}
+
+.main-container-pre {
+    margin: 5px;
+    padding: 7px;
+}
+
+.lb {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    border-left: 4px solid #00b852;
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.19), 0 0px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+img {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.info-lb {
+    width: 70%;
+    opacity: 0.8;
+    font-size: 13px;
+}
+
+.img-lb {
+    width: 30%;
+    margin: 5px;
+}
+
+.lb-btn {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.lb-btn-1 {
+    background-color: #00b852;
+    padding: 10px 20px 10px 20px;
+    color: white;
+}
+
+.lb-btn-1:hover, .lb-btn-1::after {
+    background-color: white;
+    border: 3px solid #00b852;
+    color: #00b852;
+}
+
+.lb-btn-2 {
+    background-color: #4d75cb;
+    color: white;
+    border: none;
+    padding: 10px 20px 10px 20px;
+}
+
+.lb-btn-2:hover, .lb-btn-2::after {
+    background-color: white;
+    border: 2px solid #4d75cb;
+    color: #4d75cb;
+}
+
+.lb-btn-3 {
+    background-color: #013243;
+    color: white;
+    padding: 10px 20px 10px 20px;
+}
+
+.lb-btn-3:hover, .lb-btn-3::after {
+    background-color: white;
+    color: #013243;
+    border: 2px solid #013243;
+}
+
+.lb-btn-4 {
+    background-color: #ffab71;
+    color: white;
+    padding: 10px 20px 10px 20px;
+}
+
+.lb-btn-4:hover,
+.lb-btn-4::after {
+    background-color: white;
+    color: #ffab71;
+    border: 2px solid #ffab71;
+}
+
+.lb-btn-5 {
+    background-color: #329acd;
+    color: white;
+    padding: 10px 20px 10px 20px;
+}
+
+.lb-btn-5:hover,
+.lb-btn-5::after {
+    background-color: white;
+    color: #329acd;
+    border: 2px solid #329acd;
+}
+
+.math {
+    background-color: #f4f4f4;
+    color: black;
+    padding: 15px;
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.19), 0 0px 30px 0 rgba(0, 0, 0, 0.19);
+    border-left: 4px solid black;
+}
+ p.math {
+     opacity: 0.7;
+ }
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nav {
+        display: block;
+        outline: none;
+        -webkit-tap-highlight-color: transparent;
+
+    }
+
+    .topnav {
+        display: none;
+    }
+
+    .hidenav {
+        display: block;
+    }
+}
