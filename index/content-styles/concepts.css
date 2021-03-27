@@ -137,6 +137,10 @@ li:hover {
     .sidenav a {
         font-size: 18px;
     }
+
+    ::-webkit-scrollbar {
+         width: 2px;
+    }
 }
 
 @media screen and (max-width: 999px) {
