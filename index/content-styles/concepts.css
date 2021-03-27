@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    outline-style: none;
+}
+
+
+button {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    border: none;
+    border-radius: 100px;
+}
+
+ul {
+    margin-left: -25px;
+}
+
+li {
+    list-style-type: none;
+    margin-bottom: 5px;
+    color: #818181;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+}
+
+li:hover {
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0 0px 2px 0 rgba(0,0,0,0.19), 0 0px 10px 0 rgba(0,0,0,0.19);
+  cursor: pointer;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #113d5e;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.topnav a:hover {
+    border-bottom: 3px solid #ec5d5e;
+    color: #ec5d5e;
+    cursor: pointer;
+}
+
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 6.1%;
+  left: 0;
+  background-color: #f1f1f1;
+  box-shadow: 0 0px 0px 0 rgba(0,0,0,0.19), 0 0px 0px 0 rgba(0,0,0,0.19);
+  overflow-x: scroll;
+  transition: 0.5s;
+  padding-top: 15px;
+}
+
+.sidenav a {
+  padding: 18px 8px 8px 15px;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  font-size: 20px;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: black;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.main {
+    margin-left: 300px;
+    padding: 0 10px;
+    font-size: 25px;
+}
+
+.hidenav {
+    display: none;
+}
+
+.navContainer {
+    display: flex;
+    padding: 5px;
+
+}
+
+.nav {
+    display: none;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    display:inline-block;
+}
+
+.closebtn {
+    display: none;
+    color: #f1f1f1;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .nav {
+        display: block;
+        outline: none;
+        -webkit-tap-highlight-color: transparent;
+
+    }
+
+    .topnav {
+        display: none;
+    }
+
+    .hidenav {
+        display: block;
+    }
+
+    .sidenav {
+        width: 0;
+        top: 0;
+    }
+
+    .main {
+        margin-left: 0;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+    .sidenav {
+        width: 300px;
+    }
+
+    .sidenav a {
+        display: none;
+    }
+
+    .sidenav a:second
+
+    .closebtn {
+        display: none;
+    }
+
+    .main {
+    margin-left: 300px;
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #7c7c7c; 
+  cursor: pointer;
+}
