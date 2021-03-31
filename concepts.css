@@ -169,6 +169,10 @@ img {
 
 @media screen and (min-width: 1000px) {
 
+    a {
+        display: block;
+    }
+
     img {
         width: 70%;
         height: 50%;
@@ -184,12 +188,6 @@ img {
         background-color: white;
         border-right: 1px solid #818181;
     }
-
-    .sidenav a {
-        display: none;
-    }
-
-    .sidenav a:second
 
     .closebtn {
         display: none;

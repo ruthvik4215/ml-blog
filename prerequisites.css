@@ -19,6 +19,24 @@ a {
     outline: none;
 }
 
+ul {
+    margin-left: -25px;
+}
+
+li {
+    list-style-type: none;
+    margin-bottom: 5px;
+    color: #818181;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+}
+
+li:hover {
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
 button {
     border: none;
     -webkit-tap-highlight-color: transparent;
@@ -26,6 +44,7 @@ button {
     font-weight: bold;
     border-radius: 100px;
     transition-duration: 0.4s;
+    cursor: pointer;
 }
 
 .topnav {
@@ -334,5 +353,62 @@ img {
 
     .hidenav {
         display: block;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .lb {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .lb {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .lb {
+        width: 70%;
+    }
+
+    button {
+        margin-left: 0;
+        text-align: left;
+    }
+
+    .sidenav {
+        width: 300px;
+        background-color: white;
+        border-right: 1px solid #818181;
+        top: 6.1%;
+        overflow-x: scroll;
+    }
+
+    .sidenav a {
+        display: none;
+    }
+
+    .sidenav a:second .closebtn {
+        display: none;
+    }
+
+    ul,
+    li {
+        list-style-type: none;
+    }
+
+    .main {
+        margin-left: 300px;
+        padding: 50px;
+    }
+
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    .lb-btn {
+        margin-left: 0;
     }
 }
